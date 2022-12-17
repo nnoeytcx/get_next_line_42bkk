@@ -6,7 +6,7 @@
 /*   By: tpoungla <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 13:56:02 by tpoungla          #+#    #+#             */
-/*   Updated: 2022/12/16 18:24:04 by tpoungla         ###   ########.fr       */
+/*   Updated: 2022/12/17 09:30:33 by tpoungla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,7 +104,7 @@ char	*get_next_line(int fd)
 	if (fd < 0 || BUFFER_SIZE <= 0 || read(fd, 0, 0) < 0)
 		return (NULL);
 	buffer[fd] = read_file(fd, buffer[fd]);
-    if (!buffer[fd])
+	if (!buffer[fd])
 		return (NULL);
 	line = ft_getline(buffer[fd]);
 	buffer[fd] = ft_tonext(buffer[fd]);

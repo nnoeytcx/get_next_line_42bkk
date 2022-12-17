@@ -6,7 +6,7 @@
 /*   By: tpoungla <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 13:57:26 by tpoungla          #+#    #+#             */
-/*   Updated: 2022/12/16 18:24:22 by tpoungla         ###   ########.fr       */
+/*   Updated: 2022/12/17 09:30:08 by tpoungla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@
 # include <sys/types.h>
 # include <sys/uio.h>
 # include <limits.h>
-#include <stdio.h>
-#include <fcntl.h>
+# include <stdio.h>
+# include <fcntl.h>
 
 char	*get_next_line(int fd);
 void	ft_bzero(void *b, size_t len);
